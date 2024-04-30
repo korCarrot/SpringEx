@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.green.springex.mapper.TodoMapper">
+
+    <select id="getTime" resultType="String">
+        select now()
+    </select>
+
+<!--글 삽입-->
+    <insert id="insert">
+        insert tbl_todo(title, dueDate, writer) VALUES (#{title}, #{dueDate}, #{writer});
+    </insert>
+
+
+<!--글 전체 조회-->
+    <select id="selectAll" resultType="com.green.springex.domain.TodoVO">
+        select * from tbl_todo order by tno desc
+
+    </select>
+
+    <!--글 조회-->
+    <select id="selectOne" resultType="com.green.springex.domain.TodoVO">
+        select * from tbl_todo where tno  = #{tno}
+    </select>
+
+    <!--글 삭제-->
+    <delete id="delete">
+        delete from tbl_todo where tno = #{tno}
+    </delete>
+
+    <!--글 수정-->
+    <update id="update">
+        update tbl_todo set title = #{title} , dueDate = #{dueDate}, finished= #{finished} where tno = #{tno}
+    </update>
+
+<!--  페이징 적용 및 검색 적용 후 글 조회  -->    <!-- PageRequestDTO의 getSkip. 필드에 skip이 없어도 getter가 있으면 인식됨-->
+    <select id="selectPagingList" resultType="com.green.springex.domain.TodoVO">
+        select * from tbl_todo
+        <include refid="search"></include>
+        order by tno desc limit #{skip}, #{size}
+    </select>
+
+<!--  검색 적용 후 글 개수 조회  -->
+<select id="getCount" resultType="int">
+    select count(*) from tbl_todo
+
+    <include refid="search"></include>
+</select>
+
+<!--    MyBatis의 XML 파일에서 <if> 태그 내에서 문자열 비교를 할 때는 ' ' (작은 따옴표)로 감싸는 것이 일반적-->
+<!--    't'는 문자열 상수를 나타내고, toString()은 Java의 String 객체의 메서드입니다. 그러나 이 두 가지 표현 방식은 동등한 결과를 나타냅니다.-->
+<!--
+CONCAT은 SQL에서 문자열을 결합하는 함수입니다. 이 함수는 입력된 문자열을 하나의 문자열로 연결하여 반환합니다.   -->
+<!--  조건에 따른 검색 후 조회  -->
+<!--    <select id="selectConditionList" resultType="com.green.springex.domain.TodoVO">-->
+<!--        select * from tbl_todo-->
+
+        <sql id="search">
+        <where>
+            <if test="types != null and types.length > 0">
+                <foreach collection="types" item="type" open="(" close=") " separator=" OR ">
+
+                    <if test="type == 't'.toString()">
+                        title like concat('%', #{keyword}, '%')
+                    </if>
+
+                    <if test="type == 'w'.toString()">
+                        writer like concat('%', #{keyword}, '%')
+                    </if>
+
+                </foreach>
+            </if>
+
+                 <if test="finished">
+                     <trim prefix="and">
+                         finished=1
+                     </trim>
+
+                 </if>
+
+                 <if test="from != null and to !=null">
+
+                 <trim prefix="and">
+                     dueDate between #{from} and #{to}
+                 </trim>
+                 </if>
+
+
+                 </where>
+        </sql>
+<!--         order by tno desc limit #{skip}, #{size}-->
+
+<!--    </select>-->
+
+
+</mapper>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </Console>
+    </Appenders>
+    <loggers>
+        <!--
+        additivity="false"
+        부모 로거의 설정을 상속하지 않고 독립적으로 동작합니다. 따라서 이 패키지에 대한 로깅 설정이 완전히 분리되고
+        이 패키지의 로그 이벤트가 부모 로거로 전달되지 않습니다.
+        -->
+      <logger name="org.springframework" level="info" additivity="false">
+          <AppenderRef ref="Console"/>
+      </logger>
+        <logger name="com.green" level="info" additivity="false">
+            <AppenderRef ref="Console"/>
+        </logger>
+        <logger name="com.green.springex.mapper" level="debug" additivity="false">
+            <AppenderRef ref="Console"/>
+        </logger>
+
+        <Root level="info">
+            <AppenderRef ref="Console"/>
+        </Root>
+    </loggers>
+
+</Configuration>

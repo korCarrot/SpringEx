@@ -10,10 +10,67 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dbd79bc6-170e-48ec-a8e8-595a0f64eacb" name="Changes" comment="&#10;24_4_18_마이바티스테스트완료_스프링MVC완료_부트스트랩적용2_페이징적용완료_조건후검색2_향후 부트로 변경_1차완료">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/ex7.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/ex8.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/57bb72ad-e576-4a84-bb75-670c7405fd28.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/57bb72ad-e576-4a84-bb75-670c7405fd28.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/57bb72ad-e576-4a84-bb75-670c7405fd28/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/57bb72ad-e576-4a84-bb75-670c7405fd28/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/57bb72ad-e576-4a84-bb75-670c7405fd28/storage_v2/_src_/schema/webdb.0lK8Bg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/57bb72ad-e576-4a84-bb75-670c7405fd28/storage_v2/_src_/schema/webdb.0lK8Bg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/green/springex/HelloServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/green/springex/HelloServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/green/springex/config/ModelMapperConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/green/springex/config/ModelMapperConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/green/springex/controller/SampleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/green/springex/controller/SampleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/green/springex/controller/TodoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/green/springex/controller/TodoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/green/springex/controller/exception/CommonExceptionAdvice2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/green/springex/controller/exception/CommonExceptionAdvice2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/green/springex/controller/formatter/LocalDateFormatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/green/springex/controller/formatter/LocalDateFormatter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/green/springex/domain/TodoVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/green/springex/domain/TodoVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/green/springex/dto/PageRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/green/springex/dto/PageRequestDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/green/springex/dto/PageResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/green/springex/dto/PageResponseDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/green/springex/dto/TodoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/green/springex/dto/TodoDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/green/springex/mapper/TimeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/green/springex/mapper/TimeMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/green/springex/mapper/TodoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/green/springex/mapper/TodoMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/green/springex/sample/EventSampleDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/green/springex/sample/EventSampleDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/green/springex/sample/SampleDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/green/springex/sample/SampleDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/green/springex/sample/SampleDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/green/springex/sample/SampleDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/green/springex/sample/SampleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/green/springex/sample/SampleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/green/springex/service/TodoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/green/springex/service/TodoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/green/springex/service/TodoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/green/springex/service/TodoServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/TimeTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/TimeTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/TodoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/TodoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/root-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/root-context.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/servlet-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/servlet-context.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/aaa.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/aaa.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/custom404.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/custom404.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/ex4.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/ex4.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/ex5.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/ex5.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/ex6.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/ex6.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/hi.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/hi.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/hi2.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/hi2.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/todo/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/todo/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/todo/modify.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/todo/modify.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/todo/read.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/todo/read.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/todo/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/todo/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/todoModel.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/todoModel.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/todoModelAttribute.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/todoModelAttribute.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/test.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/green/springex/SampleTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/green/springex/SampleTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/green/springex/mapper/TimeMapperTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/green/springex/mapper/TimeMapperTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/green/springex/mapper/TodoMapperTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/green/springex/mapper/TodoMapperTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/green/springex/service/TodoServiceTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/green/springex/service/TodoServiceTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,11 +109,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Jsp File" />
         <option value="HTML File" />
         <option value="spring-beans.schema" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -78,6 +135,9 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -93,6 +153,7 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "DefaultHtmlFileTemplate": "HTML File",
+    "Gradle.Build SpringEx.executor": "Run",
     "Gradle.Build springex.executor": "Run",
     "Gradle.Build springex_24_04_09.executor": "Run",
     "Gradle.SampleTests.testConnect.executor": "Run",
@@ -113,7 +174,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Tomcat Server.Tomcat 9.0.85.executor": "Run",
-    "git-widget-placeholder": "springex",
+    "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/springex/src/main/webapp/WEB-INF/views",
@@ -125,7 +186,7 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -271,7 +332,8 @@
     <configuration name="Tomcat 9.0.85" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.85" ALTERNATIVE_JRE_ENABLED="false">
       <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="COMMON_VM_ARGUMENTS" value="-Dfile.encoding=UTF-8 -Duser.language=en -Duser.region=en" />
-      <option name="UPDATING_POLICY" value="restart-server" />
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <deployment>
         <artifact name="Gradle : com.green : springex-1.0-SNAPSHOT.war (exploded)">
           <settings>
@@ -409,6 +471,8 @@
       <workItem from="1713426000990" duration="49000" />
       <workItem from="1713512498838" duration="432000" />
       <workItem from="1714463577488" duration="2755000" />
+      <workItem from="1714550319411" duration="227000" />
+      <workItem from="1714550557102" duration="7530000" />
     </task>
     <task id="LOCAL-00001" summary="24_4_9_마이바티스테스트완료">
       <option name="closed" value="true" />

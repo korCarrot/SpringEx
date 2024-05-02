@@ -18,7 +18,7 @@
     <!--HikariCP 설정-->
     <bean id="hikariConfig" class="com.zaxxer.hikari.HikariConfig">
         <property name="driverClassName" value="org.mariadb.jdbc.Driver"></property>
-        <property name="jdbcUrl" value="jdbc:mariadb://localhost:3307/webdb"></property>
+        <property name="jdbcUrl" value="jdbc:mariadb://localhost:3306/webdb"></property>
         <property name="username" value="webuser"></property>
         <property name="password" value="webuser"></property>
         <property name="dataSourceProperties">
@@ -30,7 +30,6 @@
         </property>
     </bean>
 
-
     <bean id="dataSource" class="com.zaxxer.hikari.HikariDataSource"
           destroy-method="close">
         <constructor-arg ref="hikariConfig" />
@@ -39,8 +38,12 @@
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="dataSource" />
         <property name="mapperLocations" value="classpath:/mappers/**/*.xml" />
+        <!-- classpath:/mappers/**/*.xml는 mappers 디렉토리와 그 하위 디렉토리에 있는 모든 XML 파일을 찾습니다. -->
     </bean>
 
     <mybatis:scan base-package="com.green.springex.mapper" />
+
+<!--  resources는 'classpath:'접두어를 이용해서 인식되는 경로
+      mappers폴더 밑에 폴더가 있어도 관계없도록 '**'와 모든 '.xml'을 의미하는 '*.xml'을 지정 -->
 
 </beans>

@@ -108,14 +108,19 @@ public class SampleController {
 //
 //    }
 
-
-
-
-
     @GetMapping(value = "/ex7")
     public void ex7(String p1, int p2){
         log.info(p1);
         log.info(p2);
     }
 
+
+    @GetMapping(value = "/ex8")
+    public void ex8(TodoDTO TodoDTO){
+        TodoDTO.setDueDate(LocalDate.of(2020,3,4));
+        TodoDTO.setFinished(true);
+        TodoDTO.setTno(1L);
+        TodoDTO.setWriter("hi");
+        TodoDTO.setTitle("Test");
+    }
 }

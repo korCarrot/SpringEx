@@ -5,6 +5,8 @@
     <title>Title</title>
 </head>
 <body>
-${todoDTO3}
+<%--${todoDTO3}--%>
+<hr>
+${todoDTO}
 </body>
 </html>

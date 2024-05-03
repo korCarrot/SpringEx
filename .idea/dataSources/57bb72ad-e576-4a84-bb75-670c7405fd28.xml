@@ -1,30 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="webdb_conn">
   <database-model serializer="dbm" dbms="MARIADB" family-id="MARIADB" format-version="4.51">
-    <root id="1">
-      <DefaultCasing>lower/lower</DefaultCasing>
-      <DefaultEngine>InnoDB</DefaultEngine>
-      <Grants>webdb|schema||webuser||ALTER|G
-webdb|schema||webuser||ALTER ROUTINE|G
-webdb|schema||webuser||CREATE|G
-webdb|schema||webuser||CREATE ROUTINE|G
-webdb|schema||webuser||CREATE TEMPORARY TABLES|G
-webdb|schema||webuser||CREATE VIEW|G
-webdb|schema||webuser||DELETE|G
-webdb|schema||webuser||DROP|G
-webdb|schema||webuser||EVENT|G
-webdb|schema||webuser||EXECUTE|G
-webdb|schema||webuser||INDEX|G
-webdb|schema||webuser||INSERT|G
-webdb|schema||webuser||LOCK TABLES|G
-webdb|schema||webuser||REFERENCES|G
-webdb|schema||webuser||SELECT|G
-webdb|schema||webuser||SHOW VIEW|G
-webdb|schema||webuser||TRIGGER|G
-webdb|schema||webuser||UPDATE|G
-webdb|schema||webuser||grant option|G</Grants>
-      <ServerVersion>10.5.24</ServerVersion>
-    </root>
+    <root id="1"/>
     <collation id="2" parent="1" name="big5_chinese_ci">
       <Charset>big5</Charset>
       <DefaultForCharset>1</DefaultForCharset>

@@ -17,17 +17,18 @@ import java.util.Arrays;
 @NoArgsConstructor
 public class PageRequestDTO {
 
-    @Builder.Default
-    @Min(value = 1)
-    @Positive
+    @Builder.Default    //@Builder.Default 어노테이션을 이용하여 필드의 기본값을 설정
+    @Min(value = 1)     //@Min(value = 1) 최솟값이 1
+    @Positive           //@Positive 양수여야 한다는 것을 나타냄
     private int page = 1;
 
     @Builder.Default
-    @Min(value = 10)
+    @Min(value = 10)    //@Min(value = 10)과 @Max(value = 100) 어노테이션은 각각 최솟값이 10이고 최댓값이 100이라는 제약을 설정
     @Max(value = 100)
     @Positive
     private int size = 10;
 
+//    getSkip() 메서드는 현재 페이지와 페이지 크기를 고려하여 스킵할 레코드 수를 계산하여 반환하는 메서드
     public int getSkip(){
         return (page-1)*10;
     }

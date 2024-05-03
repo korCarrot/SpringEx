@@ -33,6 +33,7 @@ public class TodoServiceTests {
     public void testPaging(){
         PageRequestDTO pageRequestDTO=PageRequestDTO.builder().page(1).size(10).build();
         log.info("pageRequestDTO : "+ pageRequestDTO);
-                todoService.getPagingList(pageRequestDTO);
+                PageResponseDTO responseDTO=todoService.getPagingList(pageRequestDTO);  //pageResponseDTO 반환
+                responseDTO.getDtoList().stream().forEach(todoDTO -> log.info(todoDTO));
     }
 }

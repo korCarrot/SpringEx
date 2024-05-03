@@ -36,13 +36,16 @@ public class TodoServiceImpl implements TodoService{
     @Override
     public List<TodoDTO> getAll() {
 
-
+// List<TodoDTO> dtoList = todoMapper.selectAll().stream(): todoMapper 객체를 사용하여 데이터베이스에서 모든 Todo 데이터를 가져옵니다. 그 후에는 이 데이터를 스트림으로 변환
+// .map((vo)->{return modelMapper.map(vo,TodoDTO.class);}): map 메서드를 사용하여 각 Todo 엔티티를 TodoDTO로 변환
+// .collect(Collectors.toList()): 변환된 각 TodoDTO 객체를 리스트로 수집합니다. Collectors.toList()는 스트림의 각 요소를 리스트로 수집하는 컬렉터
         List<TodoDTO> dtoList =todoMapper.selectAll().stream()
                 .map((vo)->{return modelMapper.map(vo,TodoDTO.class);})
                 .collect(Collectors.toList());
 
-
         return dtoList;
+//   dtoList에는 TodoDTO(tno=1032, title='한글입력', dueDate=2024-06-06, writer='user00', finished=false),
+//              TodoDTO(tno=1031, title='짜장', dueDate=2025-05-20, writer='user02', finished=false) 등의 모습으로 담겨있음
     }
 
     @Override

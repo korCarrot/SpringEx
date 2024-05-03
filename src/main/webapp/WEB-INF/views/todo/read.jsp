@@ -123,4 +123,14 @@
         self.location=`/springex/todo/modify?tno=${dto.tno}&${pageRequestDTO.link}`
     }, false)
 
+
+
+    <%--document.querySelector(".btn-primary").addEventListener("click", function (e){--%>
+    <%--    self.location="/todo/modify?tno="+${dto.tno}--%>
+    <%--},false)--%>
 </script>
+<%--false는 이벤트 리스너의 세 번째 매개변수로 전달되는 옵션입니다. 이 값은 이벤트의 캡처링과 버블링을 결정합니다.
+
+false를 전달하면 이벤트 캡처링을 비활성화합니다. 이는 이벤트가 하위 요소에서 상위 요소로 전파되는 단계에서 발생하는 이벤트 처리를 무시합니다. 대부분의 경우에는 이 값을 사용하여 이벤트 버블링을 활성화합니다.
+true를 전달하면 이벤트 캡처링을 활성화합니다. 이는 이벤트가 상위 요소에서 하위 요소로 전파되는 단계에서 발생하는 이벤트 처리를 활성화합니다. 이 값을 사용하면 특정한 순서로 이벤트를 처리할 때 유용할 수 있습니다.
+일반적으로 대부분의 경우에는 이벤트 캡처링을 사용하지 않고, 이벤트 버블링을 사용합니다. 그래서 false를 전달하는 것이 일반적입니다.--%>

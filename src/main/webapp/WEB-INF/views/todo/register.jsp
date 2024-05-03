@@ -121,17 +121,23 @@
 <script>
 
 
-
+<%-- const serverValidResult = {}: serverValidResult라는 이름의 빈 객체를 생성합니다. 이 객체는 서버 측에서 유효성 검사 결과를 저장하는 데 사용됩니다. --%>
     const serverValidResult = {}
 
     <c:forEach items="${errors}" var="error">
 
+<%-- serverValidResult['${error.getField()}'] = '${error.defaultMessage}': 현재 반복 중인 각 오류에 대해 다음을 수행합니다.
+error.getField(): 현재 오류의 필드를 가져옵니다. ${error.getField()}는 JSTL 표현식으로, 해당 오류의 필드 이름을 반환합니다.
+${error.defaultMessage}: 현재 오류의 기본 메시지를 가져옵니다. ${error.defaultMessage}는 JSTL 표현식으로, 해당 오류의 기본 메시지를 반환합니다.
+이 정보를 사용하여 serverValidResult 객체에 속성을 추가합니다. 속성 이름은 오류의 필드 이름이고, 속성 값은 오류의 기본 메시지입니다. --%>
     serverValidResult['${error.getField()}'] = '${error.defaultMessage}'
 
     </c:forEach>
 
     console.log(serverValidResult);
     //alert("제목은 " + serverValidResult['title']);
+
+
 
 
 </script>

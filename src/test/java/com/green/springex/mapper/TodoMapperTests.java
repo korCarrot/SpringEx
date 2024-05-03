@@ -3,6 +3,7 @@ package com.green.springex.mapper;
 import com.green.springex.domain.TodoVO;
 import com.green.springex.dto.PageRequestDTO;
 import com.green.springex.mapper.TodoMapper;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -17,8 +18,10 @@ import java.util.stream.IntStream;
 @Log4j2
 @ExtendWith(SpringExtension.class)
 @ContextConfiguration(locations = "file:src/main/webapp/WEB-INF/root-context.xml")
+//@RequiredArgsConstructor
 public class TodoMapperTests {
 
+//    private final TodoMapper todoMapper;
 
     @Autowired(required = false)
     private TodoMapper todoMapper;

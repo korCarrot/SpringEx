@@ -11,6 +11,9 @@
 
     <!-- 이미지나 html 파일과 같이 정적인 파일의 경로 지정-->
     <mvc:resources mapping="/resources/**" location="/resources/"></mvc:resources>
+    <!-- classpath:/mappers/**/*.xml는 mappers 디렉토리와 그 하위 디렉토리에 있는 모든 XML 파일을 찾습니다. -->
+    <!--  resources는 'classpath:'접두어를 이용해서 인식되는 경로
+          mappers폴더 밑에 폴더가 있어도 관계없도록 '**'와 모든 '.xml'을 의미하는 '*.xml'을 지정 -->
 
 
     <!--
@@ -29,6 +32,7 @@
         <property name="formatters">
             <set>
                 <bean class="com.green.springex.controller.formatter.LocalDateFormatter" />
+                <bean class="com.green.springex.controller.formatter.CheckboxFormatter"/>
             </set>
         </property>
     </bean>

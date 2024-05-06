@@ -49,20 +49,21 @@
     <include refid="search"></include>
 </select>
 
-<!--    MyBatis의 XML 파일에서 <if> 태그 내에서 문자열 비교를 할 때는 ' ' (작은 따옴표)로 감싸는 것이 일반적-->
-<!--    't'는 문자열 상수를 나타내고, toString()은 Java의 String 객체의 메서드입니다. 그러나 이 두 가지 표현 방식은 동등한 결과를 나타냅니다.-->
-<!--
-CONCAT은 SQL에서 문자열을 결합하는 함수입니다. 이 함수는 입력된 문자열을 하나의 문자열로 연결하여 반환합니다.   -->
-<!--  조건에 따른 검색 후 조회  -->
+
+    <!--  조건에 따른 검색 후 조회  -->
 <!--    <select id="selectConditionList" resultType="com.green.springex.domain.TodoVO">-->
 <!--        select * from tbl_todo-->
 
+<!--  <sql>태그를 이용해 동일한 SQL 조각을 재사용. 동적쿼리 부분을 <sql>로 분리하고 동일하게 동적 쿼리가 적용될 부분은 <include>를 이용  -->
         <sql id="search">
         <where>
             <if test="types != null and types.length > 0">
                 <foreach collection="types" item="type" open="(" close=") " separator=" OR ">
-
+-- MyBatis의 XML 파일에서 if 태그 내에서 문자열 비교를 할 때는 ' ' (작은 따옴표)로 감싸는 것이 일반적
+--    't'는 문자열 상수를 나타내고, toString()은 Java의 String 객체의 메서드입니다. 그러나 이 두 가지 표현 방식은 동등한 결과를 나타냅니다.
                     <if test="type == 't'.toString()">
+--                         CONCAT은 SQL에서 사용되는 함수로, 여러 개의 문자열을 결합하는 데 사용됩니다. 주어진 문자열을 연결하여 하나의 문자열로 반환합니다.
+-- %는 임의의 문자열을 나타내는 와일드카드입니다. 따라서 %#{keyword}%는 #{keyword}에 주어진 키워드를 양쪽에 포함하는 임의의 문자열을 찾는 것을 의미
                         title like concat('%', #{keyword}, '%')
                     </if>
 

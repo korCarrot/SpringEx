@@ -39,17 +39,19 @@ public class PageRequestDTO {
 
     // 키워드 검색을 위한 변수 선언
 
-    private String[] types;
+    private String[] types; //검색 종류
 
-    private String keyword;
+    private String keyword; //검색 키워드, 문자열
 
-    private boolean finished;
+    private boolean finished; //완료 여부
 
-    private LocalDate from;
+    private LocalDate from; //특정 기간
 
-    private LocalDate to;
+    private LocalDate to; //특정 기간
 
-
+// <검색과 필터링 구분>
+//    검색 : OR조건. A 혹은 B 혹은 C
+//    필터링 : And조건. A인 동시에 B에도 해당(A&B)
 
 
 

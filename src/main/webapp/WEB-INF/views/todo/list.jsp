@@ -137,6 +137,7 @@
                         <ul class="pagination flex-wrap">
                             <c:if test="${responseDTO.prev}">
                                 <li class="page-item">
+                                    <%-- 이전 페이지의 번호를 저장 --%>
                                     <a class="page-link" data-num="${responseDTO.start -1}">Previous</a>
                                 </li>
                             </c:if>
@@ -148,6 +149,7 @@
 
                             <c:if test="${responseDTO.next}">
                                 <li class="page-item">
+                                        <%-- 다음 페이지의 번호를 저장 --%>
                                     <a class="page-link" data-num="${responseDTO.end + 1}">Next</a>
                                 </li>
                             </c:if>
@@ -179,13 +181,16 @@
 
 <script>
 
+<%--  검색 조건이 적용된 상태에서 페이지 이동  --%>
     document.querySelector(".pagination").addEventListener("click", function (event) {
         event.preventDefault();
         event.stopPropagation();
 
+        // event.target은 발생한 이벤트를 가리킨다.
         const  target=event.target;
         console.log("target : " + target);
-        if(target.tagName !== 'A'){ //anchor 태그가 아니면 종료
+        // target.tagName = 발생한 이벤트의 html5 태그 이름
+        if(target.tagName !== 'A'){ //anchor 태그가 아니면 종료 (소문자 'a'는 적용 안됨 - chatGPT 검색해봤으나 정확한 답변X)
             return;
         }
 
@@ -194,15 +199,14 @@
 
         const formObj = document.querySelector("form")
 
+        // 위에 form 태그를 불러와서 name이 page인 input태그 추가 후 전송
         formObj.innerHTML += `<input type='hidden' name='page' value='\${num}'>`
 
         formObj.submit();
 
-
-
     }, false);
 
-
+    // 검색 조건 초기화 (1 페이지로 이동)
     document.querySelector(".clearBtn").addEventListener("click", function (e){
 
         e.preventDefault()

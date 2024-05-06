@@ -101,13 +101,13 @@ public class TodoMapperTests {
 
         log.info("검색 조건 테스트 결과 :  " + pageRequestDTO);
 
+        //    (select문에서 sql문으로 바꾸어서 selectConditionList 이제 작동x)
         List<TodoVO> todoVOList=todoMapper.selectConditionList(pageRequestDTO);
 
         todoVOList.forEach((vo)->{log.info(vo);});
     }
 
 
-//    (select문에서 sql문으로 바꾸어서 selectConditionList 이제 작동x)
     @Test
     void testSelectSearch2(){
 
@@ -116,13 +116,12 @@ public class TodoMapperTests {
 //        log.info("pageRequestDTO : " + pageRequestDTO);
         log.info("검색 조건 테스트 결과 :  " + pageRequestDTO);
 
+//    (select문에서 sql문으로 바꾸어서 selectConditionList 이제 작동x)
         List<TodoVO> todoVOList=todoMapper.selectConditionList(pageRequestDTO);
 
         todoVOList.forEach((vo)->{log.info(vo);});
     }
 
-
-//(select문에서 sql문으로 바꾸어서 selectConditionList 이제 작동x)
     @Test
     void testSelectSearch3(){
 
@@ -130,6 +129,7 @@ public class TodoMapperTests {
                 .types(new String[]{"t","w"}).keyword("짜장").finished(true).build();
         log.info("pageRequestDTO : " + pageRequestDTO);
 
+        //    (select문에서 sql문으로 바꾸어서 selectConditionList 이제 작동x)
         List<TodoVO> todoVOList=todoMapper.selectConditionList(pageRequestDTO);
 
         todoVOList.forEach((vo)->{log.info(vo);});

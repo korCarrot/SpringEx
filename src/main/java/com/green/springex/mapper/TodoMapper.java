@@ -5,6 +5,7 @@ import com.green.springex.dto.PageRequestDTO;
 
 import java.util.List;
 
+//인터페이스 임을 기억!! (클래스 아님)
 public interface TodoMapper {
     String getTime();
 

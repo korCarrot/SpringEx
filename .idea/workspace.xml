@@ -9,7 +9,9 @@
     <option name="showSidePanel" value="false" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dbd79bc6-170e-48ec-a8e8-595a0f64eacb" name="Changes" comment="&#10;24_4_18_마이바티스테스트완료_스프링MVC완료_부트스트랩적용2_페이징적용완료_조건후검색2_향후 부트로 변경_1차완료" />
+    <list default="true" id="dbd79bc6-170e-48ec-a8e8-595a0f64eacb" name="Changes" comment="2024-05-06_복습완료">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -415,6 +417,8 @@
       <workItem from="1714609116309" duration="1496000" />
       <workItem from="1714695643595" duration="12736000" />
       <workItem from="1714975512510" duration="68000" />
+      <workItem from="1714975585673" duration="76000" />
+      <workItem from="1714975895338" duration="259000" />
     </task>
     <task id="LOCAL-00001" summary="24_4_9_마이바티스테스트완료">
       <option name="closed" value="true" />
@@ -464,7 +468,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713426044405</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="2024-05-06_복습완료">
+      <option name="closed" value="true" />
+      <created>1714975633266</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1714975633267</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -491,6 +503,7 @@
     <MESSAGE value="24_4_16_페이징기능추가" />
     <MESSAGE value="24_4_16_페이징기능추가&#10;24_4_17_진행중_깃테스트" />
     <MESSAGE value="&#10;24_4_18_마이바티스테스트완료_스프링MVC완료_부트스트랩적용2_페이징적용완료_조건후검색2_향후 부트로 변경_1차완료" />
-    <option name="LAST_COMMIT_MESSAGE" value="&#10;24_4_18_마이바티스테스트완료_스프링MVC완료_부트스트랩적용2_페이징적용완료_조건후검색2_향후 부트로 변경_1차완료" />
+    <MESSAGE value="2024-05-06_복습완료" />
+    <option name="LAST_COMMIT_MESSAGE" value="2024-05-06_복습완료" />
   </component>
 </project>

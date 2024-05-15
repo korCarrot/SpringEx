@@ -36,7 +36,9 @@ public class TodoController {
 //
 //    }
 
-    //전체 글 조회(페이징 적용
+    //전체 글 조회(페이징 적용)
+    /* Java Beans와 @ModelAttribute : 스프링 MVC의 컨틀롤러는 파라미터로 getter/setter를 이용하는 Java Beans 형식의
+                                     사용자 정의 클래스가 파라미터인 경우 자동으로 화면까지 객체를 전달합니다. */
     @GetMapping("/list")
     public void list(@Valid PageRequestDTO pageRequestDTO, BindingResult bindingResult, Model  model) {
         log.info("list --- GET#----");
